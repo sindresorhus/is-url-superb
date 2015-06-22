@@ -27,7 +27,7 @@
     "is"
   ],
   "dependencies": {
-    "url-regex": "^2.0.3"
+    "url-regex": "^3.0.0"
   },
   "devDependencies": {
     "ava": "0.0.4"

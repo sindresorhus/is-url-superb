@@ -20,7 +20,7 @@ var isUrl = require('is-url-superb');
 isUrl('http://todomvc.com');
 //=> true
 
-isUrl('todomvc.com');
+isUrl('//todomvc.com');
 //=> true
 
 isUrl('unicorn');
