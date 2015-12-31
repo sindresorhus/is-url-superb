@@ -1,10 +1,8 @@
-'use strict';
-var test = require('ava');
-var isUrl = require('./');
+import test from 'ava';
+import m from './';
 
-test(function (t) {
-	t.assert(isUrl('//todomvc.com'));
-	t.assert(isUrl('http://todomvc.com'));
-	t.assert(!isUrl('abc http://todomvc.com'));
-	t.end();
+test(t => {
+	t.true(m('//todomvc.com'));
+	t.true(m('http://todomvc.com'));
+	t.false(m('abc http://todomvc.com'));
 });
