@@ -1,7 +1,7 @@
 'use strict';
-var urlRegex = require('url-regex')({exact: true});
+const urlRegex = require('url-regex')({exact: true});
 
-module.exports = function (url) {
+module.exports = url => {
 	if (typeof url !== 'string') {
 		throw new TypeError('Expected a string');
 	}

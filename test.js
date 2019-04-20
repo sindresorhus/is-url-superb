@@ -1,8 +1,8 @@
 import test from 'ava';
-import m from './';
+import isUrlSuperb from '.';
 
-test(t => {
-	t.true(m('//todomvc.com'));
-	t.true(m('http://todomvc.com'));
-	t.false(m('abc http://todomvc.com'));
+test('main', t => {
+	t.true(isUrlSuperb('//todomvc.com'));
+	t.true(isUrlSuperb('http://todomvc.com'));
+	t.false(isUrlSuperb('abc http://todomvc.com'));
 });
