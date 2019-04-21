@@ -1,7 +1,7 @@
 {
 	"name": "is-url-superb",
 	"version": "2.0.0",
-	"description": "Check if a string is an URL",
+	"description": "Check if a string is a URL",
 	"license": "MIT",
 	"repository": "sindresorhus/is-url-superb",
 	"author": {
@@ -28,7 +28,7 @@
 		"is"
 	],
 	"dependencies": {
-		"url-regex": "^4.1.1"
+		"url-regex": "^5.0.0"
 	},
 	"devDependencies": {
 		"ava": "^1.4.1",

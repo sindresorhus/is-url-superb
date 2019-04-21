@@ -1,20 +1,20 @@
 /**
-Check if a string is an URL.
+Check if a string is a URL.
 
 @example
 ```
 import isUrl = require('is-url-superb');
 
-isUrl('http://todomvc.com');
+isUrl('https://sindresorhus.com');
 //=> true
 
-isUrl('//todomvc.com');
+isUrl('//sindresorhus.com');
 //=> true
 
 isUrl('unicorn');
 //=> false
 ```
 */
-declare function isUrlSuperb(url: string): boolean;
+declare function isUrl(url: string): boolean;
 
-export = isUrlSuperb;
+export = isUrl;

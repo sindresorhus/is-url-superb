@@ -1,6 +1,6 @@
 # is-url-superb [![Build Status](https://travis-ci.org/sindresorhus/is-url-superb.svg?branch=master)](https://travis-ci.org/sindresorhus/is-url-superb)
 
-> Check if a string is an URL
+> Check if a string is a URL
 
 Created because the [`is-url`](https://github.com/segmentio/is-url) module is too loose. This module depends on a much more comprehensive [regex](https://github.com/kevva/url-regex).
 
@@ -17,10 +17,10 @@ $ npm install is-url-superb
 ```js
 const isUrl = require('is-url-superb');
 
-isUrl('http://todomvc.com');
+isUrl('https://sindresorhus.com');
 //=> true
 
-isUrl('//todomvc.com');
+isUrl('//sindresorhus.com');
 //=> true
 
 isUrl('unicorn');
