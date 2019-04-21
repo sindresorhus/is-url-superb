@@ -1,35 +1,38 @@
 {
-  "name": "is-url-superb",
-  "version": "2.0.0",
-  "description": "Check if a string is an URL",
-  "license": "MIT",
-  "repository": "sindresorhus/is-url-superb",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "url",
-    "uri",
-    "string",
-    "validate",
-    "check",
-    "is"
-  ],
-  "dependencies": {
-    "url-regex": "^3.0.0"
-  },
-  "devDependencies": {
-    "ava": "*"
-  }
+	"name": "is-url-superb",
+	"version": "2.0.0",
+	"description": "Check if a string is an URL",
+	"license": "MIT",
+	"repository": "sindresorhus/is-url-superb",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "xo && ava && tsd"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"keywords": [
+		"url",
+		"uri",
+		"string",
+		"validate",
+		"check",
+		"is"
+	],
+	"dependencies": {
+		"url-regex": "^4.1.1"
+	},
+	"devDependencies": {
+		"ava": "^1.4.1",
+		"tsd": "^0.7.2",
+		"xo": "^0.24.0"
+	}
 }

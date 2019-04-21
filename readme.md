@@ -7,15 +7,15 @@ Created because the [`is-url`](https://github.com/segmentio/is-url) module is to
 
 ## Install
 
-```sh
-$ npm install --save is-url-superb
+```
+$ npm install is-url-superb
 ```
 
 
 ## Usage
 
 ```js
-var isUrl = require('is-url-superb');
+const isUrl = require('is-url-superb');
 
 isUrl('http://todomvc.com');
 //=> true
@@ -30,4 +30,4 @@ isUrl('unicorn');
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
