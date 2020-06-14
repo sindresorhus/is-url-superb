@@ -1,10 +1,14 @@
 'use strict';
-const urlRegex = require('url-regex')({exact: true});
 
-module.exports = url => {
-	if (typeof url !== 'string') {
+module.exports = string => {
+	if (typeof string !== 'string') {
 		throw new TypeError('Expected a string');
 	}
 
-	return urlRegex.test(url.trim());
+	try {
+		new URL(string); // eslint-disable-line no-new
+		return true;
+	} catch {
+		return false;
+	}
 };
