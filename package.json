@@ -1,6 +1,6 @@
 {
 	"name": "is-url-superb",
-	"version": "4.0.0",
+	"version": "5.0.0",
 	"description": "Check if a string is a URL",
 	"license": "MIT",
 	"repository": "sindresorhus/is-url-superb",
