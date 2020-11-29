@@ -1,4 +1,4 @@
-# is-url-superb [![Build Status](https://travis-ci.com/sindresorhus/is-url-superb.svg?branch=master)](https://travis-ci.com/github/sindresorhus/is-url-superb)
+# is-url-superb
 
 > Check if a string is a URL
 
