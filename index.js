@@ -13,7 +13,7 @@ module.exports = string => {
 	try {
 		new URL(string); // eslint-disable-line no-new
 		return true;
-	} catch {
+	} catch (error) {
 		return false;
 	}
 };
