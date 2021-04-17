@@ -11,7 +11,7 @@ $ npm install is-url-superb
 ## Usage
 
 ```js
-const isUrl = require('is-url-superb');
+import isUrl from 'is-url-superb';
 
 isUrl('https://sindresorhus.com');
 //=> true

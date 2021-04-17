@@ -1,4 +1,4 @@
 import {expectType} from 'tsd';
-import isUrlSuperb = require('.');
+import isUrl from './index.js';
 
-expectType<boolean>(isUrlSuperb('https://sindresorhus.com'));
+expectType<boolean>(isUrl('https://sindresorhus.com'));

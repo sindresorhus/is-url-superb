@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = string => {
+export default function isUrl(string) {
 	if (typeof string !== 'string') {
 		throw new TypeError('Expected a string');
 	}
@@ -16,4 +14,4 @@ module.exports = string => {
 	} catch {
 		return false;
 	}
-};
+}

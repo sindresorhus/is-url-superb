@@ -1,5 +1,5 @@
 import test from 'ava';
-import isUrl from '.';
+import isUrl from './index.js';
 
 test('main', t => {
 	t.true(isUrl('https://sindresorhus.com'));
