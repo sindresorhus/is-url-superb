@@ -18,6 +18,10 @@ isUrl('https://sindresorhus.com');
 
 isUrl('unicorn');
 //=> false
+
+// Enable lenient mode to automatically prepend `https://` to the input in case it has no protocol defined.
+isUrl('unicorn', {lenient: true});
+//=> true
 ```
 
 ## Related
