@@ -13,7 +13,7 @@ test('main', t => {
 	t.false(isUrl('www.example.com'));
 });
 
-test('explicitly lenient', t => {
+test('lenient option', t => {
 	t.true(isUrl('https://sindresorhus.com', {lenient: true}));
 	t.true(isUrl('  https://sindresorhus.com  ', {lenient: true}));
 	t.false(isUrl('abc https://sindresorhus.com', {lenient: true}));
