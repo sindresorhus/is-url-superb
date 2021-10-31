@@ -13,18 +13,6 @@ test('main', t => {
 	t.false(isUrl('www.example.com'));
 });
 
-test('explicitly non-lenient', t => {
-	t.true(isUrl('https://sindresorhus.com', {lenient: false}));
-	t.true(isUrl('  https://sindresorhus.com  ', {lenient: false}));
-	t.false(isUrl('abc https://sindresorhus.com', {lenient: false}));
-	t.false(isUrl('https://sindresorhus.com abc', {lenient: false}));
-	t.false(isUrl('https://sindresorhus.com/abc def', {lenient: false}));
-	t.false(isUrl('//sindresorhus.com', {lenient: false}));
-	t.false(isUrl('localhost', {lenient: false}));
-	t.false(isUrl('192.168.0.1', {lenient: false}));
-	t.false(isUrl('www.example.com', {lenient: false}));
-});
-
 test('explicitly lenient', t => {
 	t.true(isUrl('https://sindresorhus.com', {lenient: true}));
 	t.true(isUrl('  https://sindresorhus.com  ', {lenient: true}));
