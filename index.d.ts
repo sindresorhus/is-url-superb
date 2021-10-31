@@ -1,3 +1,21 @@
+export interface Options {
+	/**
+	Wether it should automatically prepend `https://` in case the input has no protocol defined.
+
+	@default false
+
+	@example
+	```
+	isUrl('www.example.com');
+	//=> false
+
+	isUrl('www.example.com', { lenient: true });
+	//=> true
+	```
+	*/
+	readonly lenient?: boolean;
+}
+
 /**
 Check if a string is a URL.
 
@@ -18,20 +36,5 @@ isUrl('unicorn', {lenient: true});
 */
 export default function isUrl(
 	url: string,
-	options?: {
-		/**
-		 * Wether it should automatically prepend `https://` in case the input has no protocol defined.
-		 *
-		 * @example
-		 * isUrl('www.example.com');
-		 * //=> false
-		 *
-		 * isUrl('www.example.com', { lenient: true });
-		 * //=> true
-		 *
-		 * @default
-		 * false
-		 */
-		lenient: boolean;
-	}
+	options?: Options
 ): boolean;
