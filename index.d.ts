@@ -6,6 +6,8 @@ export interface Options {
 
 	@example
 	```
+    import isUrl from 'is-url-superb';
+
 	isUrl('www.example.com');
 	//=> false
 
