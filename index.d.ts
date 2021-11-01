@@ -1,17 +1,17 @@
 export interface Options {
 	/**
-	Whether URLs without a protocol should be allowed.
+	Allow URLs without a protocol.
 
 	@default false
 
 	@example
 	```
-    import isUrl from 'is-url-superb';
+	import isUrl from 'is-url-superb';
 
-	isUrl('www.example.com');
+	isUrl('example.com');
 	//=> false
 
-	isUrl('www.example.com', {lenient: true});
+	isUrl('example.com', {lenient: true});
 	//=> true
 	```
 	*/
@@ -30,10 +30,6 @@ isUrl('https://sindresorhus.com');
 
 isUrl('unicorn');
 //=> false
-
-// Use the lenient option to allow URLs without a protocol.
-isUrl('unicorn', {lenient: true});
-//=> true
 ```
 */
 export default function isUrl(url: string, options?: Options): boolean;
