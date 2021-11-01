@@ -9,7 +9,7 @@ export interface Options {
 	isUrl('www.example.com');
 	//=> false
 
-	isUrl('www.example.com', { lenient: true });
+	isUrl('www.example.com', {lenient: true});
 	//=> true
 	```
 	*/
