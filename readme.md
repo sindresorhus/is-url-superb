@@ -18,10 +18,6 @@ isUrl('https://sindresorhus.com');
 
 isUrl('unicorn');
 //=> false
-
-// Use the lenient option to allow URLs without a protocol.
-isUrl('unicorn', {lenient: true});
-//=> true
 ```
 
 ## API
@@ -37,7 +33,17 @@ Type: `object`
 Type: `boolean`\
 Default: `false`
 
-Whether URLs without a protocol should be allowed.
+Allow URLs without a protocol.
+
+```js
+import isUrl from 'is-url-superb';
+
+isUrl('example.com');
+//=> false
+
+isUrl('example.com', {lenient: true});
+//=> true
+```
 
 ## Related
 
